@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        
+        <div class="lists-container">
+            <div class="active-todos">
+                <h2>Active Todos</h2>
+                <div class="input-section">
+                    <input type="text" id="todoInput" placeholder="Enter a new todo...">
+                    <button onclick="addTodo()">Add</button>
+                </div>
+                <ul id="activeTodoList"></ul>
+            </div>
+
+            <div class="completed-todos">
+                <h2>Completed Todos</h2>
+                <ul id="completedTodoList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
